@@ -102,8 +102,6 @@ html, body {
     overflow: hidden;
     background-color: var(--violet);
     border-radius: 32px;
-    margin: 0 4rem;
-    padding: 0;
 }
 
 .selling-row{
@@ -260,6 +258,21 @@ input[type=radio] {
     
 }
 
-.test2{
-    
+.form-group {
+    border-radius: 16px;
+    background-color: #5798FE;
+}
+
+input[type='text'] {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.form-control {
+    color: white;
+}
+
+.form-control:focus, .form-control:hover {
+    color: white;
+    background-color: var(--orange);
 }

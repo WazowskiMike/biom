@@ -97,15 +97,27 @@
                 </div>
             </div>
         </div>
-        <div class="container selling-container" style="width: auto; max-width: none; position: relative;">
-            <div class="row selling-row d-flex justify-content-center">
-                <div class="col-12 col-lg-6">
-                    <div class="row selling-big-img"><img src="{% static 'media/shik_bg.jpg'%}" alt=""></div>
-                    <div class="row">
-                        <div class="col">Мини фотки</div>
-                        <div class="col">Мини фотки</div>
-                        <div class="col">Мини фотки</div>
-                    </div>
+        <div class="container selling-container" style="position: relative;">
+            <div class="row selling-row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-6" style="z-index:1; height:50vh;">
+                        <div id="carouselOptions" class="carousel slide" style="height: 100%;">
+                            <div class="carousel-inner" style="height: 100%;">
+                                <div class="carousel-item active" style="height: 100%;">
+                                    <img src="{% static "media/man.jpeg" %}" alt="" style="height: 100%; width:100%; object-fit:cover; border-radius:16px;">
+                                </div>
+                                <div class="carousel-item" style="height: 100%;">
+                                    <img src="{% static "media/man.jpeg" %}" alt="" style="height: 100%; width:100%; object-fit:cover; border-radius:16px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                 </div>
                 <div class="col-10 col-lg-4 selling-info d-flex flex-column">
                     <div class="selling-block-1">
@@ -448,65 +460,160 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container mt-5 pt-5">
-            <div class="row align-items-center justify-content-between d-flex">
-                <div class="col-12 col-lg-3 mb-3 mb-lg-0 py-4 px-4 d-flex align-items-center justify-content-center test" style="background-color:#FB486F; border-radius: 16px; position: relative; height:100%;">
-                    <div class="equal-height">
+            <div class="row align-items-center justify-content-evenly d-flex">
+                <div class="col-12 col-lg-3 mt-5 mt-lg-0 d-flex align-items-center justify-content-center flex-column" style="position: relative; height: 100%; padding:0;">
+                    <div class="equal-height py-4 px-5" style="background-color: #FB486F; border-radius: 16px;">
                         <span>
-                            Благодарю за классный комплекс! Радует то, что интуитивно малыш сам разобрался, что с ним делать. Компактный, можно домик устроить внутри и халабуду
+                            Благодарю за классный комплекс! Радует то, что интуитивно малыш сам разобрался, что с ним делать. Компактный, можно домик устроить внутри и халабуду))))
                         </span>
                     </div>
+                    <div class="d-flex mt-1 mt-lg-2">
+                        <img src="{% static "media/man.jpeg" %}" alt="" style="object-fit: cover; width: 3em; height: 3em; border-radius:50%;" class="me-2">
+                        <div>
+                            <span>Татьяна</span><br>
+                            <span class="fs-6">Мать 2 детей</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-3 mb-3 mb-lg-0 py-4 px-4 d-flex align-items-center justify-content-center" style="background-color: #3951ee; border-radius: 16px; position: relative; height: 100%;">
-                    <div class="equal-height">
+                <div class="col-12 col-lg-3 mt-5 mt-lg-0 d-flex align-items-center justify-content-center flex-column" style="position: relative; height: 100%; padding:0;">
+                    <div class="equal-height py-4 px-5" style="background-color: #3975ee; border-radius: 16px;">
                         <span>
                             Хочу выразить благодарность сотрудникам Андрею и Сергею за помощь в решении моего вопроса по спортивному комплексу “Пирамида”.
                         </span>
                     </div>
+                    <div class="d-flex mt-1 mt-lg-2">
+                        <img src="{% static "media/man.jpeg" %}" alt="" style="object-fit: cover; width: 3em; height: 3em; border-radius:50%;" class="me-2">
+                        <div>
+                            <span>Андрей</span><br>
+                            <span class="fs-6">Отец</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-3 mb-3 mb-lg-0 py-4 px-4 d-flex align-items-center justify-content-center" style="background-color: #FB486F; border-radius: 16px; position: relative; height: 100%;">
-                    <div class="equal-height">
+                <div class="col-12 col-lg-3 mt-5 mt-lg-0 d-flex align-items-center justify-content-center flex-column" style="position: relative; height: 100%; padding:0;">
+                    <div class="equal-height py-4 px-5" style="background-color: #FB486F; border-radius: 16px;">
                         <span>
                             Очень понравился комплекс, сын с удовольствием проводит на нем время! Особенно когда в дождливый день не выйти на площадку
                         </span>
                     </div>
+                    <div class="d-flex mt-1 mt-lg-2">
+                        <img src="{% static "media/man.jpeg" %}" alt="" style="object-fit: cover; width: 3em; height: 3em; border-radius:50%;" class="me-2">
+                        <div>
+                            <span>Елена</span><br>
+                            <span class="fs-6">Мать 3 детей</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="row justify-content-between">
-                    <div class="col-12 col-lg-3">
-                        <div class="col-6">
-                            <img src="{% static "media/hero_child.webp" %}" alt="" style="object-fit: cover; height:100%; width: 50%;">
+            </div>
+        </div>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img src="{% static "media/man.jpeg" %}" alt="form-video" style="object-fit: cover; width: 100%; height: 100%; border-radius:16px;">
+                </div>
+                <div class="col-12 col-lg-6 py-5 px-5" style="background-color:#604CC3; border-radius:16px;">
+                    <span class="fw-bold fs-1">Свяжитесь с нами!</span>
+                    <form action="" method="post" id="form">
+                        {% csrf_token %}
+                        <div class="form-group mb-2 mt-3">
+                          <input id="phone" aria-label="Номер телефона" type="text" name="phone" placeholder="Номер телефона" class="form-control fs-5">
+                          <div class="error text-start fs-5 fw-light"></div>
                         </div>
-                        <div class="col-6">
-                            <span>Иванов А.С.</span>
-                            <span class="fs-6">Малыш от 6 месяцев до 4 лет</span>
+                        <div class="form-group mb-2">
+                          <input id="Email" aria-label="Email" type="text" name="Email" placeholder="Email" class="form-control fs-5">
+                          <div class="error text-start fs-5 fw-light"></div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="col-6">
-                            <img src="{% static "media/hero_child.webp" %}" alt="" style="object-fit: cover; height:100%; width: 50%;">
+                        <div class="form-group mb-2">
+                          <input id="Telegram" aria-label="Telegram" type="text" name="Telegram" placeholder="Telegram" class="form-control fs-5">
+                          <div class="error text-start fs-5 fw-light"></div>
                         </div>
-                        <div class="col-6">
-                            <span>Иванов А.С.</span>
-                            <span class="fs-6">Малыш от 6 месяцев до 4 лет</span>
+                        <div class="form-group mb-2 mt-5 pt-5" style="background-color: transparent;">
+                          <input type="submit" value="Оставить заявку" class="btn btn-primary py-3 px-5 fs-4" style="width: 100%; border-radius:32px; background-color:#FF7F3E;">
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="col-6">
-                            <img src="{% static "media/hero_child.webp" %}" alt="" style="object-fit: cover; height:100%; width: 50%;">
+                    </form>
+                    <span>
+                        Нажимая заказать вы соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-12" style="max-height:100vh;">
+                    <div id="carouselSertificates" class="carousel slide" style="height: 100%;">
+                        <div class="carousel-inner" style="height: 100%;">
+                            <div class="carousel-item active" style="height: 100%;">
+                                <img src="{% static "media/man.jpeg" %}" alt="" style="height: 100%; width:100%; object-fit:contain;">
+                            </div>
+                            <div class="carousel-item" style="height: 100%;">
+                                <img src="{% static "media/man.jpeg" %}" alt="" style="height: 100%; width:100%; object-fit:contain;">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <span>Иванов А.С.</span>
-                            <span class="fs-6">Малыш от 6 месяцев до 4 лет</span>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSertificates" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSertificates" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="container mt-5" style="background-color: #604CC3; border-radius:16px;">
+            <div class="row align-items-center justify-content-center">
+                <div style="width: fit-content;">
+                    <img src="{% static "media/logo.svg" %}" alt="">
+                </div>
+                <div style="width: fit-content;" class="ms-5 me-5 d-none d-md-block">
+                    <a href="#" style="color:white; text-decoration:none;" class="me-1">
+                        Преимущества
+                    </a>
+                    <a href="#" style="color:white; text-decoration:none;" class="me-1">
+                        Фотографии
+                    </a>
+                    <a href="#" style="color:white; text-decoration:none;" class="me-1">
+                        Отзывы
+                    </a>
+                    <a href="#" style="color:white; text-decoration:none;" class="">
+                        Связаться с нами
+                    </a>
+                </div>
+                <div style="width: fit-content;" class="d-flex mb-2 mt-lg-0">
+                    <div class="d-flex align-items-center justify-content-center mx-2">
+                        <i class="fa-solid fa-phone d-flex align-items-center justify-content-center" style="width: 2rem; height: 2rem; color: #80C4E9;"></i>
+                        <a class="a-classe" href="#">8 980-637-27-77<a>
+                      </div>
+                      <div class="align-items-center justify-content-center mx-2 d-none d-md-flex">
+                            <i class="fa-solid fa-envelope d-flex align-items-center justify-content-center" style="width: 2rem; height: 2rem; color: #80C4E9;"></i>
+                            <a class="a-classe" href="#">info@biom.ru<a>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mx-2 d-none d-md-block">
+                            <a href="#" class="btn my-btn  text-center btn-lg px-4">Заказать<a></a>
+                      </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-lg-end justify-content-center">
+                    <span>
+                        ©Все права защищены ООО”Биом” 2024г 
+                    </span>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-lg-start justify-content-center">
+                    <a href="#" style="color:white; text-decoration:none;">
+                        Разработано NES@Agency
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
